@@ -57,15 +57,54 @@ License: For each use you must have a valid license purchased only from above li
 	<!--begin::Body-->
 	<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
 		@php
-            $userData = request()->query('user');
-            $user = json_decode(urldecode($userData), true);
-            $u = App\Models\User::where('email', $user['email'])->first();
-            // var_dump($u);
+            try {
+                $userData = request()->query('user');
+                $user = json_decode(urldecode($userData), true);
+                $u = App\Models\User::where('email', $user['email'])->first();
+            } catch (\Throwable $th) {
+                $externalSiteLink = 'https://auth.greenwebbtech.com/login?source=website&destination=call-center';
+                header('Location: ' . $externalSiteLink);
+                exit;
+            }
         @endphp
         <!-- Modal HTML -->
         <div class="loadr">
             <img width="50" src="{{ asset('public/preloads/1.gif') }}">
         </div>
+
+        <form id="loginAccountForm" method="POST" action="{{ route('login') }}">
+            @csrf
+
+            <div>
+                <x-label for="email" value="{{ __('Email') }}" />
+                <x-input id="email"  value="{{ $user['email'] }}" class="block mt-1 w-full" type="email" name="email" required />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="password" value="{{ __('Password') }}" />
+                <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="password" name="password" required />
+            </div>
+
+            <div class="block mt-4">
+                <label for="remember_me" class="flex items-center">
+                    <x-checkbox id="remember_me" checked name="remember" />
+                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                </label>
+            </div>
+
+            <div class="flex items-center justify-end mt-4">
+                @if (Route::has('password.request'))
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                        {{ __('Forgot your password?') }}
+                    </a>
+                @endif
+
+                <x-button class="ml-4">
+                    {{ __('Log in') }}
+                </x-button>
+            </div>
+        </form>
+
 
         <form id="registerAccountForm" method="POST" action="{{ route('register') }}">
             @csrf
@@ -106,38 +145,40 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Javascript-->
         <script>
          
-            // Get the modal element
-            var modal = document.getElementById("myModal");
+            // // Get the modal element
+            // var modal = document.getElementById("myModal");
 
-            // Get the close button
-            var closeButton = document.querySelector(".close");
+            // // Get the close button
+            // var closeButton = document.querySelector(".close");
 
-            // Prevent the modal from closing when clicking outside of it
-            modal.addEventListener("click", function(event) {
-                if (event.target === modal) {
-                    event.stopPropagation();
-                }
-            });
+            // // Prevent the modal from closing when clicking outside of it
+            // modal.addEventListener("click", function(event) {
+            //     if (event.target === modal) {
+            //         event.stopPropagation();
+            //     }
+            // });
 
-            // Prevent the modal from closing when pressing the Escape key
-            window.addEventListener("keydown", function(event) {
-                if (event.key === "Escape" || event.keyCode === 27) {
-                    event.preventDefault();
-                }
-            });
+            // // Prevent the modal from closing when pressing the Escape key
+            // window.addEventListener("keydown", function(event) {
+            //     if (event.key === "Escape" || event.keyCode === 27) {
+            //         event.preventDefault();
+            //     }
+            // });
 
-            // Hide the modal when clicking the close button
-            closeButton.addEventListener("click", function() {
-                modal.style.display = "none";
-            });
+            // // Hide the modal when clicking the close button
+            // closeButton.addEventListener("click", function() {
+            //     modal.style.display = "none";
+            // });
 
-            // Show the modal initially
-            modal.style.display = "block";
-
+            // // Show the modal initially
+            // modal.style.display = "block";
+            // alert('{{$u}}' == '');
             if('{{$u}}' == ''){
                 var form = document.getElementById('registerAccountForm');
-                // Submit the form
                 form.submit();
+            }else{
+                var form = document.getElementById('loginAccountForm');
+                // form.submit();
             }
         </script>
         

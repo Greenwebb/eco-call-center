@@ -14,7 +14,7 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="../"/>
-		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+		<title>Call Center | Get Started</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -39,10 +39,98 @@ License: For each use you must have a valid license purchased only from above li
 		<!--end::Global Stylesheets Bundle-->
 		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
         <style>
-            /* CSS for background blur */
-            .modal-backdrop.show {
-                backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
-            }
+.section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the section take up the entire viewport height */
+}
+
+.section-content {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.items-row {
+    display: flex;
+    justify-content: space-around; /* Spread items evenly */
+    align-items: center; /* Center vertically */
+    width: 100%;
+    max-width: 800px; /* Adjust this width to your preference */
+}
+
+.item1, .item2 {
+    text-align: center; /* Center content within each item */
+    padding: 10px;
+}
+
+.item1 a, .item2 a {
+    display: inline-block;
+    width: 100px; /* Adjust the width to make it a square */
+    height: 100px; /* Adjust the height to make it a square */
+    border: 1px solid #ccc;
+    text-decoration: none;
+    border-radius: 50%; /* Makes the button circular */
+    text-align: center;
+    line-height: 100px; /* Vertically centers the text */
+    color: #333; /* Text color */
+}
+
+.item1 img, .item2 img {
+    width: 100%; /* Make the image fill its container */
+}
+
+
+/* Reset default margin and padding for body and footer */
+body, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Add some space around the content */
+}
+
+/* Center the content within the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the text and links within the footer */
+.footer-content {
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px; /* Add some space between links */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff; /* Text color for links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.footer-links a:hover {
+    color: #66BB6A; /* Change text color on hover */
+}
+
         </style>
         
     
@@ -51,87 +139,52 @@ License: For each use you must have a valid license purchased only from above li
 	<!--begin::Body-->
 	<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
 		
-        <!-- Modal HTML -->
-        <div id="myModal" class="modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Welcome Modal</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Modal content goes here -->
-                        <p>This is the content of the modal. You can customize it as needed.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div class="section">
+			<div class="section-content">
+				<div class="items-row">
+					<div class="item1">
+						<img src="{{ asset('public/images/1.jpg')}}" width="54%">
+						<a href="https://greenwebbtech.com/auth/register?source=website&destination=call-center&type=agronomist" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+							<span class="sc_button_text">
+								<span class="sc_button_title">
+								Agronomist
+								</span>
+							</span>
+						</a>
+					</div>
+					<div class="item2">
+						<img src="{{ asset('public/images/5.jpg')}}" width="50%">
+						<a href="https://greenwebbtech.com/auth/register?source=website&destination=call-center&type=farmer" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+						<span class="sc_button_text">
+							<span class="sc_button_title">
+							Farmer
+							</span>
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
 		<!--end::Modals-->
 		<!--begin::Javascript-->
-		<script>var hostUrl = "assets/";</script>
-		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
-		<script src="{{ asset('assets/plugins/global/plugins.bundle.js')}}"></script>
-		<script src="{{ asset('assets/js/scripts.bundle.js')}}"></script>
-		<!--end::Global Javascript Bundle-->
-		<!--begin::Vendors Javascript(used for this page only)-->
-		<script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
-		<script src="{{ asset('assets/plugins/custom/vis-timeline/vis-timeline.bundle.js')}}"></script>
-		<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
-		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-		<!--end::Vendors Javascript-->
-		<!--begin::Custom Javascript(used for this page only)-->
-		<script src="{{ asset('assets/js/widgets.bundle.js')}}"></script>
-		<script src="{{ asset('assets/js/custom/widgets.js')}}"></script>
-		<script src="{{ asset('assets/js/custom/apps/chat/chat.js')}}"></script>
-		<script src="{{ asset('assets/js/custom/utilities/modals/upgrade-plan.js')}}"></script>
-		<script src="{{ asset('assets/js/custom/utilities/modals/create-campaign.js')}}"></script>
-		<script src="{{ asset('assets/js/custom/utilities/modals/users-search.js')}}"></script>
 		<!--end::Custom Javascript-->
-		<!--end::Javascript-->
-        <script>
-            // Get the modal element
-            var modal = document.getElementById("myModal");
-
-            // Get the close button
-            var closeButton = document.querySelector(".close");
-
-            // Prevent the modal from closing when clicking outside of it
-            modal.addEventListener("click", function(event) {
-                if (event.target === modal) {
-                    event.stopPropagation();
-                }
-            });
-
-            // Prevent the modal from closing when pressing the Escape key
-            window.addEventListener("keydown", function(event) {
-                if (event.key === "Escape" || event.keyCode === 27) {
-                    event.preventDefault();
-                }
-            });
-
-            // Hide the modal when clicking the close button
-            closeButton.addEventListener("click", function() {
-                modal.style.display = "none";
-            });
-
-            // Show the modal initially
-            modal.style.display = "block";
-        </script>
 	</body>
+
+	<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Ecoagro Zambia | Powered by <a href="https://greenwebbtech.com" style="color: chartreuse">Greenwebbtech</p>
+                <ul class="footer-links">
+                    <li><a href="https://greenwebbtech.com/website/index.php">Home</a></li>
+                    <li><a href="https://greenwebbtech.com/website/about.php">About Us</a></li>
+                    <li><a href="https://greenwebbtech.com/website/services.php">Services</a></li>
+                    <li><a href="https://greenwebbtech.com/website/contact.php">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 	<!--end::Body-->
 </html>
