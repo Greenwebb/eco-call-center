@@ -14,7 +14,7 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="../"/>
-		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by Keenthemes</title>
+		<title>Call Center </title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -43,6 +43,12 @@ License: For each use you must have a valid license purchased only from above li
             .modal-backdrop.show {
                 backdrop-filter: blur(10px); /* Adjust the blur intensity as needed */
             }
+            .loadr {
+                display: flex;
+                justify-content: center; /* Center horizontally */
+                align-items: center; /* Center vertically */
+                height: 100vh; /* Makes sure the container takes up the entire viewport height */
+            }
         </style>
         
     
@@ -54,61 +60,30 @@ License: For each use you must have a valid license purchased only from above li
             $userData = request()->query('user');
             $user = json_decode(urldecode($userData), true);
             $u = App\Models\User::where('email', $user['email'])->first();
-            var_dump($u);
+            // var_dump($u);
         @endphp
         <!-- Modal HTML -->
-        <div id="myModal" class="modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myModalLabel">Welcome Modal</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    </div>
-                    <div class="modal-body">
-                        <form method="POST" action="{{ route('login') }}">
-                            @csrf
-                            
-                            <div>
-                                <x-input id="email" value="{{ $user['email'] }}" placeholder="{{ $user['email'] }}" class="block mt-1 w-full" type="email" name="email" required autofocus autocomplete="username" />
-                            </div>
-                
-                            <div class="mt-4">
-                                <x-input id="password" value="{{ $user['global_secret_word'] }}" placeholder="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-                            </div>
-                
-                            <div class="block mt-4">
-                                <label for="remember_me" class="flex items-center">
-                                    <x-checkbox id="remember_me" name="remember" />
-                                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-primary" data-dismiss="modal">Close</button>
-
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                    </div>
-                </div>
-            </div>
+        <div class="loadr">
+            <img width="50" src="{{ asset('public/preloads/1.gif') }}">
         </div>
 
         <form id="registerAccountForm" method="POST" action="{{ route('register') }}">
             @csrf
             <x-validation-errors class="mb-4" />
             <div>
-                <x-input id="name"  value="{{ $user['name'] }}"  placeholder="{{ $user['name'] }}" class="block mt-1 w-full" type="text" name="name"  />
+                <x-input id="name"  value="{{ $user['name'] }}"  placeholder="{{ $user['name'] }}" class="block mt-1 w-full" type="hidden" name="name"  />
             </div>
 
             <div class="mt-4">
-                <x-input id="email" value="{{ $user['email'] }}"  placeholder="{{ $user['email'] }}" class="block mt-1 w-full" type="email" name="email" />
+                <x-input id="email" value="{{ $user['email'] }}"  placeholder="{{ $user['email'] }}" class="block mt-1 w-full" type="hidden" name="email" />
             </div>
 
             <div class="mt-4">
-                <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="password" name="password" required/>
+                <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="password" required/>
             </div>
 
             <div class="mt-4">
-                <x-input id="password_confirmation" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="password" name="password_confirmation" />
+                <x-input id="password_confirmation" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="password_confirmation" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
@@ -130,7 +105,7 @@ License: For each use you must have a valid license purchased only from above li
         </form>
 		<!--end::Javascript-->
         <script>
-
+         
             // Get the modal element
             var modal = document.getElementById("myModal");
 
