@@ -2130,7 +2130,16 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::Menu item-->
                         <!--begin::Menu item-->
                         <div class="menu-item px-5">
-                            <a href="../../demo6/dist/authentication/layouts/corporate/sign-in.html" class="menu-link px-5">Sign Out</a>
+                            <a class="menu-link px-5" href="{{ route('logout') }}"
+								onclick="event.preventDefault();
+												document.getElementById('logout-form').submit();">
+									{{ __('Sign Out') }}
+								</a>
+
+								<form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+									@csrf
+								</form>
+							</a>
                         </div>
                         <!--end::Menu item-->
                     </div>
