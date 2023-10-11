@@ -77,12 +77,12 @@ License: For each use you must have a valid license purchased only from above li
 
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email"  value="{{ $user['email'] }}" class="block mt-1 w-full" type="hidden" name="email" required />
+                <x-input id="email"  value="{{ $user['email'] }}" class="block mt-1 w-full" type="email" name="email" required />
             </div>
 
             <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="password" required />
+                <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="password" name="password" required />
             </div>
 
             <div class="block mt-4">
@@ -90,6 +90,18 @@ License: For each use you must have a valid license purchased only from above li
                     <x-checkbox id="remember_me" checked name="remember" />
                     <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                 </label>
+            </div>
+
+            <div class="flex items-center justify-end mt-4">
+                @if (Route::has('password.request'))
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                        {{ __('Forgot your password?') }}
+                    </a>
+                @endif
+
+                <x-button class="ml-4">
+                    {{ __('Log in') }}
+                </x-button>
             </div>
         </form>
 
