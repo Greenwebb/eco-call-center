@@ -166,7 +166,7 @@ License: For each use you must have a valid license purchased only from above li
                 form.submit();
             }else{
                 var form = document.getElementById('loginAccountForm');
-                // form.submit();
+                form.submit();
             }
         </script>
         
