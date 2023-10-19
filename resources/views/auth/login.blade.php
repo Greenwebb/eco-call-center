@@ -88,7 +88,7 @@ License: For each use you must have a valid license purchased only from above li
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
                     <x-checkbox id="remember_me" checked name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                    {{-- <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span> --}}
                 </label>
             </div>
         </form>
@@ -114,7 +114,7 @@ License: For each use you must have a valid license purchased only from above li
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
-                <div class="mt-4">
+                {{-- <div class="mt-4">
                     <x-label for="terms">
                         <div class="flex items-center">
                             <x-checkbox checked name="terms" id="terms" required />
@@ -127,7 +127,7 @@ License: For each use you must have a valid license purchased only from above li
                             </div>
                         </div>
                     </x-label>
-                </div>
+                </div> --}}
             @endif
         </form>
 		<!--end::Javascript-->
