@@ -2076,14 +2076,14 @@ li {
     line-height: 200px;
 }
 .bg-slideshow li:nth-child(1) .image {
-    background-image: url('{{ asset("public/img/1.png") }}')
+    background-image: url('{{ asset("public/img/1.PNG") }}')
 }
 .bg-slideshow li:nth-child(2) .image {
     background-image: url('{{ asset("public/img/1.jpg") }}');
     animation-delay: 6s;
 }
 .bg-slideshow li:nth-child(3) .image {
-    background-image: url('{{ asset("public/img/2.png") }}');
+    background-image: url('{{ asset("public/img/2.PNG") }}');
     animation-delay: 12s;
 }
 .bg-slideshow li:nth-child(2) div {
@@ -2477,7 +2477,7 @@ li {
                                                                         <div class="elementor-widget-container">
                                                                             <div class="elementor-image">
                                                                                 <a href="##callcenter">
-                                                                                    <img decoding="async" loading="lazy" width="278" height="277" src="{{ asset('public/img/8.png') }}" style="border-radius: 10%" class="elementor-animation-grow-rotate attachment-full size-full" alt="" sizes="(max-width: 278px) 100vw, 278px" />
+                                                                                    <img decoding="async" loading="lazy" width="278" height="277" src="{{ asset('public/img/8.PNG') }}" style="border-radius: 10%" class="elementor-animation-grow-rotate attachment-full size-full" alt="" sizes="(max-width: 278px) 100vw, 278px" />
                                                                                 </a>
                                                                             </div>
                                                                         </div>
