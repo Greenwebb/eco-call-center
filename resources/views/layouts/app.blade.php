@@ -751,12 +751,12 @@ License: For each use you must have a valid license purchased only from above li
                         </div>
                         
                         <div data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="bottom-start" class="menu-item menu-lg-down-accordion menu-sub-lg-down-indention me-0 me-lg-2">
-                            <!--begin:Menu link-->
+                            <!--begin:Menu link
                             <span class="menu-link py-3">
                                 <span class="menu-title">Help</span>
                                 <span class="menu-arrow d-lg-none"></span>
                             </span>
-                            <!--end:Menu link-->
+                            end:Menu link-->
                             <!--begin:Menu sub-->
                             <div class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown px-lg-2 py-lg-4 w-lg-200px">
                                 <!--begin:Menu item-->
@@ -2228,7 +2228,7 @@ License: For each use you must have a valid license purchased only from above li
 							<!--begin::Copyright-->
 							<div class="text-dark order-2 order-md-1">
 								<span class="text-muted fw-semibold me-1">2023&copy;</span>
-								<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
+								<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Ecoagro</a>
 							</div>
 							<!--end::Copyright-->
 							<!--begin::Menu-->
