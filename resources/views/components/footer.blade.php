@@ -192,7 +192,7 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-text-editor elementor-clearfix">
                                                                 <span class="trx_addons_alter_text"><a
-                                                                        href="tel:+18408412569">+260 972283827</a></span>
+                                                                        href="tel:+260 773 505 560">+260 773 505 560</a></span>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -13,17 +13,47 @@
                                                 <a href="{{ route('welcome') }}" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1675068927"><img class="logo_image" src="{{ asset('public/img/logo.png')}}" alt="Ecoagro" width="173" height="53"></a>
                                             </div>
                                         </div>
-                                        <div class="sc_layouts_item elementor-element elementor-element-066af30 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_iconed_text" data-id="066af30" data-element_type="widget" data-widget_type="trx_sc_layouts_iconed_text.default">
+                                        <div class="sc_layouts_item elementor-element elementor-element-29ff9f0 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_menu" data-id="29ff9f0" data-element_type="widget" data-widget_type="trx_sc_layouts_menu.default">
                                             <div class="elementor-widget-container">
-                                                <div class="sc_layouts_iconed_text">
-                                                    <a href="tel:18004585697" class="sc_layouts_item_link sc_layouts_iconed_text_link">
-                                                        <span class="sc_layouts_item_details sc_layouts_iconed_text_details">
-                                                            <span class="sc_layouts_item_details_line1 sc_layouts_iconed_text_line1">+26 097 458 56 97</span>
-                                                        </span>
-                                                    </a>
-                                                </div>
+                                                <nav class="sc_layouts_menu sc_layouts_menu_default sc_layouts_menu_dir_horizontal menu_hover_zoom_line" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
+                                                    <ul id="menu_main" class="sc_layouts_menu_nav menu_main_nav">
+                                                        <li id="menu-item-17651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17651">
+                                                            <a href="https://website.greenwebbtech.com/services.php"><span>Services</span></a>
+                                                            <ul class="sub-menu">
+                                                                <li id="menu-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280">
+                                                                    <a href="https://callcenter.greenwebbtech.com"><span>Call Center</span></a>
+                                                                </li>
+                                                                <li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286">
+                                                                    <a href="https://callcenter.greenwebbtech.com"><span>Online Advisory Services</span></a>
+                                                                </li>
+                                                                <li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288">
+                                                                    <a  href="https://market.greenwebbtech.com"><span>Marketplace</span></a>
+                                                                </li>
+                                                                <!-- <li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287">
+                                                                    <a href="#"><span>Ecopay Payment Gateway</span></a>
+                                                                </li> -->
+
+                                                            </ul>
+                                                        </li>
+                                                        <li id="menu-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18295">
+                                                            <a href="about.php"><span>About</span></a>
+
+                                                        </li>
+                                                        <li id="menu-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18300">
+                                                            <a href="https://market.greenwebbtech.com"><span>Marketplace</span></a>
+
+                                                        </li>
+                                                        <li id="menu-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
+                                                            <a href="https://website.greenwebbtech.com/contact.php"><span>Contact</span></a>
+                                                        </li>
+                                                        
+                                                        <li id="menu-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
+                                                            <a href="tel:+260773505560" style="color: #2B6A3B; font-weight:bold;"><span>+260 773 505 560</span></a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
                                             </div>
-                                        </div> 
+                                        </div>
                                         <div class="sc_layouts_item elementor-element elementor-element-3fb9c4d sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_search" data-id="3fb9c4d" data-element_type="widget" data-widget_type="trx_sc_layouts_search.default">
                                             <div class="elementor-widget-container">
                                                 {{-- <div class="sc_layouts_search">
@@ -224,37 +254,37 @@
                 <nav class="menu_mobile_nav_area" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
                     <ul id="menu_mobile_1599394569">
                         <li id="menu_mobile-item-18273" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-18273">
-                            <a href="#"><span>Home</span></a>
+                            <a href="{{ route('welcome') }}"><span>Home</span></a>
 
                         </li>
                         <li id="menu_mobile-item-17651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17651">
-                            <a href="services.php"><span>Services</span></a>
+                            <a href="https://website.greenwebbtech.com/services.php"><span>Services</span></a>
                             <ul class="sub-menu">
-                                <li id="menu_mobile-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280">
-                                    <a href="#"><span>The Call Center</span></a>
-                                </li>
+                                {{-- <li id="menu_mobile-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280">
+                                    <a href="https://callcenter.greenwebbtech.com"><span>The Call Center</span></a>
+                                </li> --}}
                                 <li id="menu_mobile-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286">
-                                    <a href="our-services.html"><span>Online Advisory Services</span></a>
+                                    <a href="https://callcenter.greenwebbtech.com"><span>Online Advisory Services</span></a>
                                 </li>
                                 <li id="menu_mobile-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288">
-                                    <a href="marketplace.php"><span>The Marketplace</span></a>
+                                    <a href="https://market.greenwebbtech.com"><span>The Marketplace</span></a>
                                 </li>
-                                <li id="menu_mobile-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287">
+                                {{-- <li id="menu_mobile-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287">
                                     <a href="#"><span>Ecopay Payment Gateway</span></a>
-                                </li>
+                                </li> --}}
 
                             </ul>
                         </li>
                         <li id="menu_mobile-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18295">
-                            <a href="about.php"><span>About Us</span></a>
+                            <a href="https://website.greenwebbtech.com/about.php"><span>About Us</span></a>
 
                         </li>
                         <li id="menu_mobile-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18300">
-                            <a href="marketplace.php"><span>Marketplace</span></a>
+                            <a href="{{ route('welcome') }}"><span>Marketplace</span></a>
 
                         </li>
                         <li id="menu_mobile-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
-                            <a href="contact.php"><span>Contact</span></a>
+                            <a href="https://website.greenwebbtech.com/contact.php"><span>Contact</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -262,12 +292,12 @@
                 <div class="sc_layouts_item elementor-element elementor-element-d662b41 sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="d662b41" data-element_type="widget" data-widget_type="trx_sc_button.default">
                     <div class="elementor-widget-container">
                         <div class="sc_item_button sc_button_wrap"><a style="
-    background: #770614;
-" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2"><span class="sc_button_text"><span class="sc_button_title">Get
+                                            background: #770614;
+                                        " href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2"><span class="sc_button_text"><span class="sc_button_title">Get
                                         Started</span></span></a></div>
                     </div>
                 </div>
-                <div class="socials_mobile"><a target="_blank" href="https://www.facebook.com/AxiomThemes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="https://twitter.com/ThemesAxiom" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_twitter-new" style=""><span class="icon-twitter-new"></span></span></a><a target="_blank" href="https://dribbble.com/AxiomThemes" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_dribble-new" style=""><span class="icon-dribble-new"></span></span></a><a target="_blank" href="https://www.instagram.com/axiom_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a></div>
+                <div class="socials_mobile"><a target="_blank" href="https://www.facebook.com/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_facebook-1" style=""><span class="icon-facebook-1"></span></span></a><a target="_blank" href="https://twitter.com/ThemesAxiom" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_twitter-new" style=""><span class="icon-twitter-new"></span></span></a><a target="_blank" href="https://dribbble.com/AxiomThemes" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_dribble-new" style=""><span class="icon-dribble-new"></span></span></a><a target="_blank" href="https://www.instagram.com/axiom_themes/" class="social_item social_item_style_icons sc_icon_type_icons social_item_type_icons"><span class="social_icon social_icon_instagram" style=""><span class="icon-instagram"></span></span></a></div>
             </div>
         </div>
         <div class="menu_mobile_widgets_area">
@@ -282,12 +312,12 @@
 
                             <div class="extra_item">
                                 <h6>Want to Work With Us?</h6>
-                                <a href="contact.php">Send Brief</a>
+                                <a href="https://website.greenwebbtech.com/contact.php">Send Brief</a>
                             </div>
 
                             <div class="extra_item">
                                 <h6>Want to Buy Products?</h6>
-                                <a href="marketplace.php">Go to Marketplace</a>
+                                <a href="https://website.greenwebbtech.com/marketplace.php">Go to Marketplace</a>
                             </div>
                         </div>
                     </aside>

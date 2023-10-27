@@ -2214,6 +2214,8 @@ li {
                                                         <div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1c27b8fa sc_inner_width_none sc_content_align_inherit sc_layouts_column_icons_position_left sc_fly_static" data-id="1c27b8fa" data-element_type="column">
                                                             <div class="elementor-column-wrap elementor-element-populated">
                                                                 <div class="elementor-widget-wrap">
+                                                                    <p style="color: #ffffff; font-weight:bold; font-size: 35px;">+260 773 505 560</p>
+
                                                                     <section class="elementor-section elementor-inner-section elementor-element elementor-element-6589da6c scheme_default elementor-section-boxed elementor-section-height-default elementor-section-height-default animation_type_block sc_fly_static">
                                                                         <div class="elementor-container elementor-column-gap-no">
                                                                             <div class="elementor-row">
@@ -2256,10 +2258,11 @@ li {
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            
                                                                                             <div class="elementor-element elementor-element-22b035a1 sc_fly_static elementor-widget elementor-widget-text-editor" data-id="22b035a1" data-element_type="widget" data-widget_type="text-editor.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div class="elementor-text-editor elementor-clearfix">
-                                                                                                        <p>+26 097 458 56 97</p>
+                                                                                                        <p style="color: #60411f; font-weight:bold; font-size: 21px;">+260 773 505 560</p>
                                                                                                         <ul class="trx_addons_list_dot">
                                                                                                             <li>Mon-Fri:
                                                                                                                 9 AM – 6
