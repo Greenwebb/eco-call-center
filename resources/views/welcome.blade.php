@@ -2348,7 +2348,7 @@ li {
                                                                                                     <div class="elementor-text-editor elementor-clearfix">
                                                                                                         A platform for
 																										skilled professionals to
-																										offer a servive from the
+																										offer a advisory services from the
 																										comfort of their home
                                                                                                     </div>
                                                                                                 </div>
@@ -2361,15 +2361,25 @@ li {
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            @auth
                                                                                             <div class="elementor-element elementor-element-5a817888 sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="5a817888" data-element_type="widget" data-widget_type="trx_sc_button.default">
                                                                                                 <div class="elementor-widget-container">
                                                                                                     <div class="sc_item_button sc_button_wrap">
-                                                                                                        <a href="https://auth.greenwebbtech.com/register?source=callcenter&destination=callcenter&type=agronomist" class="sc_button sc_button_bordered sc_button_size_small sc_button_icon_left color_style_dark"><span class="sc_button_text"><span class="sc_button_title">
+                                                                                                            Welcome
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            @else
+                                                                                            <div class="elementor-element elementor-element-5a817888 sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="5a817888" data-element_type="widget" data-widget_type="trx_sc_button.default">
+                                                                                                <div class="elementor-widget-container">
+                                                                                                    <div class="sc_item_button sc_button_wrap">
+                                                                                                        <a href="https://auth.greenwebbtech.com/register?source=call-center&destination=call-center&type=agronomist" class="sc_button sc_button_bordered sc_button_size_small sc_button_icon_left color_style_dark"><span class="sc_button_text"><span class="sc_button_title">
                                                                                                             Register as a Professional Agronomist
                                                                                                             </span></span></a>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>
+                                                                                            @endauth
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2479,7 +2489,7 @@ li {
                                                                     <div class="elementor-element elementor-element-1f3dffa elementor-widget__width-initial elementor-absolute sc_fly_static elementor-widget elementor-widget-image" data-id="1f3dffa" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
                                                                         <div class="elementor-widget-container">
                                                                             <div class="elementor-image">
-                                                                                <a href="##callcenter">
+                                                                                <a href="##call-center">
                                                                                     <img decoding="async" loading="lazy" width="278" height="277" src="{{ asset('public/img/8.PNG') }}" style="border-radius: 10%" class="elementor-animation-grow-rotate attachment-full size-full" alt="" sizes="(max-width: 278px) 100vw, 278px" />
                                                                                 </a>
                                                                             </div>
