@@ -124,13 +124,13 @@
                                                         </span>
                                                     </a>
                                                     @else
-                                                    <a id="showLoginLink" href="https://auth.greenwebbtech.com/login?source=callcenter&destination=callcenter"  class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+                                                    {{-- <a id="showLoginLink" href="https://auth.greenwebbtech.com/login?source=callcenter&destination=callcenter"  class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
                                                         <span class="sc_button_text">
                                                             <span class="sc_button_title">
                                                                 Login
                                                             </span>
                                                         </span>
-                                                    </a>
+                                                    </a> --}}
                                                     @endauth
                                                 </div>
                                             </div>
