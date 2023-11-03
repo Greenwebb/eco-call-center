@@ -144,7 +144,7 @@ body, footer {
 				<div class="items-row">
 					<div class="item1">
 						<img src="{{ asset('public/images/1.jpg')}}" width="54%">
-						<a href="https://greenwebbtech.com/auth/register?source=website&destination=call-center&type=agronomist" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+						<a href="https://ecoagrozm.com/auth/register?source=website&destination=call-center&type=agronomist" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
 							<span class="sc_button_text">
 								<span class="sc_button_title">
 								Agronomist
@@ -154,7 +154,7 @@ body, footer {
 					</div>
 					<div class="item2">
 						<img src="{{ asset('public/images/5.jpg')}}" width="50%">
-						<a href="https://greenwebbtech.com/auth/register?source=website&destination=call-center&type=farmer" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+						<a href="https://ecoagrozm.com/auth/register?source=website&destination=call-center&type=farmer" class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
 						<span class="sc_button_text">
 							<span class="sc_button_title">
 							Farmer
@@ -176,12 +176,12 @@ body, footer {
 	<footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2023 Ecoagro Zambia | Powered by <a href="https://greenwebbtech.com" style="color: chartreuse">Greenwebbtech</p>
+                <p>&copy; 2023 Ecoagro Zambia | Powered by <a href="https://ecoagrozm.com" style="color: chartreuse">Greenwebbtech</p>
                 <ul class="footer-links">
-                    <li><a href="https://greenwebbtech.com/website/index.php">Home</a></li>
-                    <li><a href="https://greenwebbtech.com/website/about.php">About Us</a></li>
-                    <li><a href="https://greenwebbtech.com/website/services.php">Services</a></li>
-                    <li><a href="https://greenwebbtech.com/website/contact.php">Contact Us</a></li>
+                    <li><a href="https://ecoagrozm.com/website/index.php">Home</a></li>
+                    <li><a href="https://ecoagrozm.com/website/about.php">About Us</a></li>
+                    <li><a href="https://ecoagrozm.com/website/services.php">Services</a></li>
+                    <li><a href="https://ecoagrozm.com/website/contact.php">Contact Us</a></li>
                 </ul>
             </div>
         </div>

@@ -62,7 +62,7 @@ License: For each use you must have a valid license purchased only from above li
                 $user = json_decode(urldecode($userData), true);
                 $u = App\Models\User::where('email', $user['email'])->first();
             } catch (\Throwable $th) {
-                $externalSiteLink = 'https://auth.greenwebbtech.com/login?source=website&destination=call-center';
+                $externalSiteLink = 'https://auth.ecoagrozm.com/login?source=website&destination=call-center';
                 header('Location: ' . $externalSiteLink);
                 exit;
             }

@@ -870,7 +870,7 @@
                         <!--end::Title-->
                         <!--begin::Toolbar-->
                         <div class="card-toolbar">
-                            <a href="../../demo6/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-sm btn-light">PDF Report</a>
+                            {{-- <a href="../../demo6/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-sm btn-light">PDF Report</a> --}}
                         </div>
                         <!--end::Toolbar-->
                     </div>
@@ -900,7 +900,7 @@
                         <!--end::Title-->
                         <!--begin::Toolbar-->
                         <div class="card-toolbar">
-                            <a href="../../demo6/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-sm btn-light">PDF Report</a>
+                            {{-- <a href="../../demo6/dist/apps/ecommerce/catalog/add-product.html" class="btn btn-sm btn-light">PDF Report</a> --}}
                         </div>
                         <!--end::Toolbar-->
                     </div>

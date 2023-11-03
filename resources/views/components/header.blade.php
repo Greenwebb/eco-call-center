@@ -10,7 +10,7 @@
                                     <div class="elementor-widget-wrap">
                                         <div class="sc_layouts_item elementor-element elementor-element-f112344 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="f112344" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
                                             <div class="elementor-widget-container">
-                                                <a href="https://website.greenwebbtech.com" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1675068927"><img class="logo_image" src="{{ asset('public/img/logo.png')}}" alt="Ecoagro" width="173" height="53"></a>
+                                                <a href="https://website.ecoagrozm.com" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1675068927"><img style="width: 150px; height: 160px" class="logo_image" src="{{ asset('public/img/logo.png')}}" alt="Ecoagro" width="173" height="53"></a>
                                             </div>
                                         </div>
                                         <div class="sc_layouts_item elementor-element elementor-element-29ff9f0 sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_menu" data-id="29ff9f0" data-element_type="widget" data-widget_type="trx_sc_layouts_menu.default">
@@ -18,21 +18,21 @@
                                                 <nav class="sc_layouts_menu sc_layouts_menu_default sc_layouts_menu_dir_horizontal menu_hover_zoom_line" data-animation-in="fadeInUpSmall" data-animation-out="fadeOutDownSmall">
                                                     <ul id="menu_main" class="sc_layouts_menu_nav menu_main_nav">
                                                         <li id="menu-item-18273" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-18273">
-                                                            <a href="https://website.greenwebbtech.com"><span>Home</span></a>
+                                                            <a href="https://website.ecoagrozm.com"><span>Home</span></a>
 
                                                         </li>
                                                         
                                                         <li id="menu-item-17651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17651">
-                                                            <a href="https://website.greenwebbtech.com/services.php"><span>Services</span></a>
+                                                            <a href="https://website.ecoagrozm.com/services.php"><span>Services</span></a>
                                                             <ul class="sub-menu">
                                                                 <li id="menu-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280">
-                                                                    <a href="https://callcenter.greenwebbtech.com"><span>Call Center</span></a>
+                                                                    <a href="https://callcenter.ecoagrozm.com"><span>Call Center</span></a>
                                                                 </li>
                                                                 <li id="menu-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286">
-                                                                    <a href="https://callcenter.greenwebbtech.com"><span>Online Advisory Services</span></a>
+                                                                    <a href="https://callcenter.ecoagrozm.com"><span>Online Advisory Services</span></a>
                                                                 </li>
                                                                 <li id="menu-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288">
-                                                                    <a  href="https://market.greenwebbtech.com"><span>Marketplace</span></a>
+                                                                    <a  href="https://market.ecoagrozm.com"><span>Marketplace</span></a>
                                                                 </li>
                                                                 <!-- <li id="menu-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287">
                                                                     <a href="#"><span>Ecopay Payment Gateway</span></a>
@@ -41,15 +41,15 @@
                                                             </ul>
                                                         </li>
                                                         <li id="menu-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18295">
-                                                            <a href="https://website.greenwebbtech.com/about.php"><span>About</span></a>
+                                                            <a href="https://website.ecoagrozm.com/about.php"><span>About</span></a>
 
                                                         </li>
                                                         <li id="menu-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18300">
-                                                            <a href="https://market.greenwebbtech.com"><span>Marketplace</span></a>
+                                                            <a href="https://market.ecoagrozm.com"><span>Marketplace</span></a>
 
                                                         </li>
                                                         <li id="menu-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
-                                                            <a href="https://website.greenwebbtech.com/contact.php"><span>Contact</span></a>
+                                                            <a href="https://website.ecoagrozm.com/contact.php"><span>Contact</span></a>
                                                         </li>
                                                         
                                                         <li id="menu-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
@@ -129,7 +129,7 @@
                                                         </span>
                                                     </a>
                                                     @else
-                                                    {{-- <a id="showLoginLink" href="https://auth.greenwebbtech.com/login?source=callcenter&destination=callcenter"  class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
+                                                    {{-- <a id="showLoginLink" href="https://auth.ecoagrozm.com/login?source=callcenter&destination=callcenter"  class="sc_button sc_button_default sc_button_size_small sc_button_icon_left color_style_link2">
                                                         <span class="sc_button_text">
                                                             <span class="sc_button_title">
                                                                 Login
@@ -156,7 +156,7 @@
                                     <div class="elementor-widget-wrap">
                                         <div class="sc_layouts_item elementor-element elementor-element-703d5de sc_fly_static elementor-widget elementor-widget-trx_sc_layouts_logo" data-id="703d5de" data-element_type="widget" data-widget_type="trx_sc_layouts_logo.default">
                                             <div class="elementor-widget-container">
-                                                <a href="https://website.greenwebbtech.com" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1726964019">
+                                                <a href="https://website.ecoagrozm.com" class="sc_layouts_logo sc_layouts_logo_default trx_addons_inline_1726964019">
                                                 <img class="logo_image" src="{{ asset('public/img/logo2.png') }}" srcset="{{ asset('public/img/logo2.png') }} 2x" alt="Ecoagro" width="173" height="53"></a>
                                             </div>
                                         </div>
@@ -227,7 +227,7 @@
 
                                         <div class="sc_layouts_item elementor-element elementor-element-feaea9d sc_layouts_hide_on_mobile sc_fly_static elementor-widget elementor-widget-trx_sc_button" data-id="feaea9d" data-element_type="widget" data-widget_type="trx_sc_button.default">
                                             <div class="elementor-widget-container">
-                                                <div class="sc_item_button sc_button_wrap"><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="sc_button hide_on_mobile sc_button_default sc_button_size_small sc_button_icon_left color_style_link2"><span class="sc_button_text"><span class="sc_button_title">Get
+                                                <div class="sc_item_button sc_button_wrap"><a href="https://auth.ecoagrozm.com/register?source=call-center&destination=call-center&type=agronomist" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="sc_button hide_on_mobile sc_button_default sc_button_size_small sc_button_icon_left color_style_link2"><span class="sc_button_text"><span class="sc_button_title">Get
                                                     Started</span></span></a></div>
                                             </div>
                                         </div>
@@ -248,11 +248,11 @@
 <div class="menu_mobile menu_mobile_fullscreen scheme_dark">
     <div class="menu_mobile_inner with_widgets">
         <div class="menu_mobile_header_wrap">
-            <a class="sc_layouts_logo" href="https://website.greenwebbtech.com">
+            <a class="sc_layouts_logo" href="https://website.ecoagrozm.com">
                 <img src="{{ asset('public/theme/images/logo2.png') }}" srcset="{{ asset('public/theme/images/logo2.png') }} 2x" alt="Ecoagro" width="173" height="53"> 
             </a>
 
-            <a class="menu_mobile_close menu_button_close" tabindex="0" href="agro-services.html"><span class="menu_button_close_text">Close</span><span class="menu_button_close_icon"></span></a>
+
         </div>
         <div class="menu_mobile_content_wrap content_wrap">
             <div class="menu_mobile_content_wrap_inner">
@@ -263,16 +263,16 @@
 
                         </li>
                         <li id="menu_mobile-item-17651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17651">
-                            <a href="https://website.greenwebbtech.com/services.php"><span>Services</span></a>
+                            <a href="https://website.ecoagrozm.com/services.php"><span>Services</span></a>
                             <ul class="sub-menu">
                                 {{-- <li id="menu_mobile-item-18280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18280">
-                                    <a href="https://callcenter.greenwebbtech.com"><span>The Call Center</span></a>
+                                    <a href="https://callcenter.ecoagrozm.com"><span>The Call Center</span></a>
                                 </li> --}}
                                 <li id="menu_mobile-item-18286" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18286">
-                                    <a href="https://callcenter.greenwebbtech.com"><span>Online Advisory Services</span></a>
+                                    <a href="https://callcenter.ecoagrozm.com"><span>Online Advisory Services</span></a>
                                 </li>
                                 <li id="menu_mobile-item-18288" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18288">
-                                    <a href="https://market.greenwebbtech.com"><span>The Marketplace</span></a>
+                                    <a href="https://market.ecoagrozm.com"><span>The Marketplace</span></a>
                                 </li>
                                 {{-- <li id="menu_mobile-item-18287" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18287">
                                     <a href="#"><span>Ecopay Payment Gateway</span></a>
@@ -281,7 +281,7 @@
                             </ul>
                         </li>
                         <li id="menu_mobile-item-18295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18295">
-                            <a href="https://website.greenwebbtech.com/about.php"><span>About Us</span></a>
+                            <a href="https://website.ecoagrozm.com/about.php"><span>About Us</span></a>
 
                         </li>
                         <li id="menu_mobile-item-18300" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-18300">
@@ -289,7 +289,7 @@
 
                         </li>
                         <li id="menu_mobile-item-17194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17194">
-                            <a href="https://website.greenwebbtech.com/contact.php"><span>Contact</span></a>
+                            <a href="https://website.ecoagrozm.com/contact.php"><span>Contact</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -317,12 +317,12 @@
 
                             <div class="extra_item">
                                 <h6>Want to Work With Us?</h6>
-                                <a href="https://website.greenwebbtech.com/contact.php">Send Brief</a>
+                                <a href="https://website.ecoagrozm.com/contact.php">Send Brief</a>
                             </div>
 
                             <div class="extra_item">
                                 <h6>Want to Buy Products?</h6>
-                                <a href="https://website.greenwebbtech.com/marketplace.php">Go to Marketplace</a>
+                                <a href="https://website.ecoagrozm.com/marketplace.php">Go to Marketplace</a>
                             </div>
                         </div>
                     </aside>
