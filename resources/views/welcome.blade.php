@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="profile" href="//gmpg.org/xfn/11">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Call Center | Ecogro</title>
+    <title>Call Center | EcoAgro</title>
     <link rel="canonical" href="https://agricola.axiomthemes.com" />
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//use.typekit.net' />
