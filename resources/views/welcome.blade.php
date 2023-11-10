@@ -2032,8 +2032,8 @@ li {
 }
 .bg-slideshow:after {
     content: '';
-    background: transparent url('http://watchmaker.haz.wiki/_media/tips:stripes.png') repeat top left;
-    /*background: transparent url('http://erinsowards.com/articles/2012/07/graphics/bkg_patterns_08.gif') repeat top left;*/
+    /* background: transparent url('http://watchmaker.haz.wiki/_media/tips:stripes.png') repeat top left; */
+    background-color: rgba(0, 0, 0, 0.3); /*Adjust the alpha value (0.5) for the level of transparency*/
 }
 .bg-slideshow li .image {
     width: 100%;
