@@ -2119,6 +2119,7 @@ li {
 </head>
 
 <body class="page-template-default page page-id-18091 wp-custom-logo theme-agricola woocommerce-no-js tinvwl-theme-style skin_default scheme_light blog_mode_page body_style_fullscreen is_single sidebar_hide expand_content remove_margins trx_addons_present header_type_custom header_style_header-custom-18667 header_position_over menu_side_none no_layout fixed_blocks_sticky elementor-default elementor-kit-15 elementor-page elementor-page-18091">
+    
     <div class="body_wrap">
         <div class="page_wrap">
             <a class="agricola_skip_link skip_to_content_link" href="#content_skip_link_anchor" tabindex="1">Skip to

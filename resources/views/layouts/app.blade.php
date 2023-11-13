@@ -45,13 +45,66 @@ License: For each use you must have a valid license purchased only from above li
 @livewireStyles
 
 
+<style>
 
+.modal {
+	  padding-top: 15%;
+	  padding: 4%;
+	  margin: 5%;
+      display: none;
+      position: fixed;
+	  top: 45%;
+	  left: 45%;
+      align-content: center;
+	  justify-content: center;
+      transform: translate(-50%, -50%);
+	  height: 50vh;
+      background-color: #fff;
+	  background-image: url('{{asset("public/img/3x.jpg")}}'); /* Add your image URL here */
+      background-size: cover;
+      /* background-position: center; */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      max-width: 50%;
+      text-align: center;
+      animation: fadeIn 0.4s ease-out;
+      z-index: 9999; /* Ensure the modal is above the overlay */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(3px); /* Apply a blur effect */
+      z-index: 9999; /* Ensure the overlay is below the modal */
+    }
+</style>
 </head>
 <!--end::Head-->
 <!--begin::Body-->
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed">
 <!--begin::Theme mode setup on page load-->
 <script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }</script>
+
+<div class="overlay" id="overlay"></div>
+<div class="modal" id="modal" >
+  <h2>Please wait while we set up and create <br>your company's BPO account </h2>
+  <p>An email will be sent to you once your workspace is prepared.</p>
+</div>
+
 <!--end::Theme mode setup on page load-->
 <!--begin::Main-->
 <!--begin::Root-->
@@ -5984,7 +6037,28 @@ License: For each use you must have a valid license purchased only from above li
 					fileBadge.textContent = numSelectedFiles + ' files selected';
 				}
 			});
+					
+					
+			$(document).ready(function() {
+				const overlay = $('#overlay');
+				const modal = $('#modal');
 
+				function openModal() {
+					overlay.show();
+					modal.show();
+				}
+
+				function closeModal() {
+					// You can customize this function to prevent closing in specific scenarios
+					overlay.hide();
+					modal.hide();
+				}
+
+				// Open the modal after 1 second (for demonstration purposes)
+				// setTimeout(openModal, 1000);
+				openModal();
+				$('#closeBtn').on('click', closeModal);
+			});
 		</script>
 	</body>
 	<!--end::Body-->
