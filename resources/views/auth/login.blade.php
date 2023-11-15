@@ -60,7 +60,6 @@ License: For each use you must have a valid license purchased only from above li
             try {
                 $userData = request()->query('user');
                 $user = json_decode(urldecode($userData), true);
-                // dd($user);
                 if ($user['bpo'] != []) {
                     $bpo = $user['bpo'][0];
                 }
