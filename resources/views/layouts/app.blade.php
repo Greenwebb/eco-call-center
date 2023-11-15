@@ -101,7 +101,7 @@ License: For each use you must have a valid license purchased only from above li
 
 <div class="overlay" id="overlay"></div>
 <div class="modal" id="modal" >
-  <h2>Please wait while we set up and create <br>your company's BPO account </h2>
+  <h2>Please wait while we set up and create <br>your company's @if( auth()->user()->type == 'bpo') BPO @else Agronomist @endif  account </h2>
   <p>An email will be sent to you once your workspace is prepared.</p>
 </div>
 

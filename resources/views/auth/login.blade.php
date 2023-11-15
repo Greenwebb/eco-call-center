@@ -60,6 +60,9 @@ License: For each use you must have a valid license purchased only from above li
             try {
                 $userData = request()->query('user');
                 $user = json_decode(urldecode($userData), true);
+
+                $bpo = $user['bpo'][0];
+                // dd($bpo['c_slogan']);
                 $u = App\Models\User::where('email', $user['email'])->first();
             } catch (\Throwable $th) {
                 $externalSiteLink = 'https://auth.ecoagrozm.com/login?source=website&destination=call-center';
@@ -76,18 +79,18 @@ License: For each use you must have a valid license purchased only from above li
             @csrf
 
             <div>
-                <x-label for="email" value="{{ __('Email') }}" />
+                {{-- <x-label for="email" value="{{ __('Email') }}" /> --}}
                 <x-input id="email"  value="{{ $user['email'] }}" class="block mt-1 w-full" type="hidden" name="email" required />
             </div>
 
             <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" />
+                {{-- <x-label for="password" value="{{ __('Password') }}" /> --}}
                 <x-input id="password" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="password" required />
             </div>
 
             <div class="block mt-4">
                 <label for="remember_me" class="flex items-center">
-                    <x-checkbox id="remember_me" checked name="remember" />
+                    <x-checkbox type="hidden" id="remember_me" checked name="remember" />
                     {{-- <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span> --}}
                 </label>
             </div>
@@ -112,6 +115,30 @@ License: For each use you must have a valid license purchased only from above li
             <div class="mt-4">
                 <x-input id="password_confirmation" value="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="password_confirmation" />
             </div>
+
+
+            {{-- SNYC DATA --}}
+            <x-input id="type" value="{{ $user['type'] }}"  placeholder="{{ $user['type'] }}" class="block mt-1 w-full" type="hidden" name="type"  />
+            <x-input id="global_key" value="{{ $user['global_key'] }}"  placeholder="{{ $user['global_key'] }}" class="block mt-1 w-full" type="hidden" name="global_key"  />
+            
+            @if (!empty($bpo))
+                <x-input id="is_bpo_approved"  value="{{ $user['is_bpo_approved'] }}"  placeholder="{{ $user['is_bpo_approved'] }}" class="block mt-1 w-full" type="hidden" name="is_bpo_approved"  />
+                <x-input id="sex"  value="{{ $user['sex'] }}"  placeholder="{{ $user['sex'] }}" class="block mt-1 w-full" type="hidden" name="sex"  />
+                <x-input id="occupation"  value="{{ $user['occupation'] }}"  placeholder="{{ $user['occupation'] }}" class="block mt-1 w-full" type="hidden" name="occupation"  />
+                <x-input id="global_secret_word"  value="{{ $user['global_secret_word'] }}"  placeholder="{{ $user['global_secret_word'] }}" class="block mt-1 w-full" type="hidden" name="global_secret_word"  />
+                <x-input id="company_name"  value="{{ $bpo['company_name'] }}"  placeholder="{{ $bpo['company_name'] }}" class="block mt-1 w-full" type="hidden" name="company_name"  />
+                <x-input id="c_email"  value="{{ $bpo['c_email'] }}"  placeholder="{{ $bpo['c_email'] }}" class="block mt-1 w-full" type="hidden" name="c_email"  />
+                <x-input id="c_phone"  value="{{ $bpo['c_phone'] }}"  placeholder="{{ $bpo['c_phone'] }}" class="block mt-1 w-full" type="hidden" name="c_phone"  />
+                <x-input id="c_address"  value="{{ $bpo['c_address'] }}"  placeholder="{{ $bpo['c_address'] }}" class="block mt-1 w-full" type="hidden" name="c_address"  />
+                <x-input id="c_logo"  value="{{ $bpo['c_logo'] }}"  placeholder="{{ $bpo['c_logo'] }}" class="block mt-1 w-full" type="hidden" name="c_logo"  />
+                <x-input id="global_user_id"  value="{{ $bpo['user_id'] }}"  placeholder="{{ $bpo['user_id'] }}" class="block mt-1 w-full" type="hidden" name="global_user_id"  />
+                <x-input id="xcode"  value="{{ $bpo['xcode'] }}"  placeholder="{{ $bpo['xcode'] }}" class="block mt-1 w-full" type="hidden" name="xcode"  />
+                <x-input id="pin"  value="{{ $bpo['pin'] }}"  placeholder="{{ $bpo['pin'] }}" class="block mt-1 w-full" type="hidden" name="pin"  />
+                <x-input id="c_phone2"  value="{{ $bpo['c_phone2'] }}"  placeholder="{{ $bpo['c_phone2'] }}" class="block mt-1 w-full" type="hidden" name="c_phone2"  />
+                <x-input id="c_slogan"  value="{{ $bpo['c_slogan'] }}"  placeholder="{{ $bpo['c_slogan'] }}" class="block mt-1 w-full" type="hidden" name="c_slogan"  />
+                <x-input id="c_city"  value="{{ $bpo['c_city'] }}"  placeholder="{{ $bpo['c_city'] }}" class="block mt-1 w-full" type="hidden" name="c_city"  />
+                <x-input id="c_country"  value="{{ $bpo['c_country'] }}"  placeholder="{{ $bpo['c_country'] }}" class="block mt-1 w-full" type="hidden" name="c_country"  />
+            @endif
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 {{-- <div class="mt-4">

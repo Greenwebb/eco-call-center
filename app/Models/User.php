@@ -24,9 +24,28 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
+        'global_key',
         'name',
         'email',
         'password',
+        'status',
+        'type',
+        'is_bpo_approved',
+        'sex',
+        'occupation',
+        'global_secret_word',
+        'company_name',
+        'c_email',
+        'c_phone',
+        'c_address',
+        'c_logo',
+        'global_user_id',
+        'xcode',
+        'pin',
+        'c_phone2',
+        'c_slogan',
+        'c_city',
+        'c_country',
     ];
 
     /**
