@@ -60,8 +60,8 @@ License: For each use you must have a valid license purchased only from above li
             try {
                 $userData = request()->query('user');
                 $user = json_decode(urldecode($userData), true);
-                dd($user);
-                if ($user['bpo'] !== null) {
+                // dd($user);
+                if ($user['bpo'] != []) {
                     $bpo = $user['bpo'][0];
                 }
                 // dd($bpo['c_slogan']);
@@ -123,7 +123,7 @@ License: For each use you must have a valid license purchased only from above li
             {{-- SNYC DATA --}}
             <x-input id="type" value="{{ $user['type'] }}"  placeholder="{{ $user['type'] }}" class="block mt-1 w-full" type="hidden" name="type"  />
             <x-input id="global_key" value="{{ $user['global_key'] }}"  placeholder="{{ $user['global_key'] }}" class="block mt-1 w-full" type="hidden" name="global_key"  />
-            @if ($user['bpo'] !== null) 
+            @if ($user['bpo'] != []) 
                 @if (!empty($bpo))
                     <x-input id="is_bpo_approved"  value="{{ $user['is_bpo_approved'] }}"  placeholder="{{ $user['is_bpo_approved'] }}" class="block mt-1 w-full" type="hidden" name="is_bpo_approved"  />
                     <x-input id="sex"  value="{{ $user['sex'] }}"  placeholder="{{ $user['sex'] }}" class="block mt-1 w-full" type="hidden" name="sex"  />
